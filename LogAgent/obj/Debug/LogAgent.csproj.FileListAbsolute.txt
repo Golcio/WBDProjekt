@@ -1,0 +1,10 @@
+D:\VisualStudioProjects\LogAgent\LogAgent\bin\Debug\LogAgent.exe.config
+D:\VisualStudioProjects\LogAgent\LogAgent\bin\Debug\LogAgent.exe
+D:\VisualStudioProjects\LogAgent\LogAgent\bin\Debug\LogAgent.pdb
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.csprojResolveAssemblyReference.cache
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.Form1.resources
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.Properties.Resources.resources
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.csproj.GenerateResource.Cache
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.exe
+D:\VisualStudioProjects\LogAgent\LogAgent\obj\Debug\LogAgent.pdb
