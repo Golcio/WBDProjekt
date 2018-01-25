@@ -1,0 +1,12 @@
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\bin\Debug\WBDProject.exe.config
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\bin\Debug\WBDProject.exe
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\bin\Debug\WBDProject.pdb
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.csprojResolveAssemblyReference.cache
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.BeginningWindow.resources
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.Properties.Resources.resources
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.csproj.GenerateResource.Cache
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.exe
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.pdb
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.AdminWindow.resources
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.ClientWindow.resources
+E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.CustomerInterfaceWIndow.resources
