@@ -15,6 +15,8 @@ namespace WBDProject
         public ClientWindow()
         {
             InitializeComponent();
+            SQLRequester.getAllClientsNames(ref this.comboBox1);
+            this.comboBox1.SelectedIndex = 0;
         }
 
         private void ClientWindow_Load(object sender, EventArgs e)
@@ -36,6 +38,8 @@ namespace WBDProject
         {
             CustomerInterfaceWIndow CIW = new CustomerInterfaceWIndow(comboBox1.Text);
             CIW.Show();
+            CIW.Activate();
+            this.Hide();
         }
     }
 }

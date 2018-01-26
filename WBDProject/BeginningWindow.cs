@@ -32,18 +32,27 @@ namespace WBDProject
                 case "client":
                     ClientWindow CW = new ClientWindow();
                     CW.Show();
+                    CW.Activate();
                     break;
                 case "admin":
                     AdminWindow AW = new AdminWindow();
                     AW.Show();
+                    AW.Activate();
                     break;
                 default:
                     MessageBox.Show("Please choose either \"admin\" od \"client\".");
                     break;
             }
+
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
