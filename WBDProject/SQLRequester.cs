@@ -16,7 +16,7 @@ namespace WBDProject
     public class SQLRequester
     {
         private static string connectionString =
-            "Server = .\\SQLEXPRESS;Database=LogDB;Integrated Security=true";
+            "Data Source=GOLTER;Initial Catalog=LogDB;Integrated Security=True";
 
         private void SQLRequest(string text, ref ComboBox comboBox)
         {
@@ -51,7 +51,7 @@ namespace WBDProject
         public static void ShowAllExcursions(ref DataGridView grid)
         {
             var conn = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("SELECT * FROM WDBProject.dbo.Excursion;", conn);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Excursion;", conn);
 
             try
             {
@@ -86,7 +86,7 @@ namespace WBDProject
 
             StringBuilder textBuilder = new StringBuilder(
                 $"SELECT Excursion_Name, Description, Beggining_time, End_time, Standard, All_inclusive, Price, " +
-                $"Excursion_type FROM WBDProject.dbo.Excursion ");
+                $"Excursion_type FROM Excursion ");
 
             if (string.IsNullOrEmpty(people_in_room) &&
                 string.IsNullOrEmpty(standard) &&
@@ -101,8 +101,8 @@ namespace WBDProject
                 if (!string.IsNullOrEmpty(people_in_room))
                 {
                     textBuilder.Append("AND Excursion_ID IN " +
-                                       $"(SELECT Excursion_ID FROM WBDProject.dbo.Room_Rent " +
-                                       "WHERE Room_ID IN (SELECT Room_ID FROM WBDProject.dbo.Room " +
+                                       $"(SELECT Excursion_ID FROM Room_Rent " +
+                                       "WHERE Room_ID IN (SELECT Room_ID FROM Room " +
                                        $"WHERE People_in_room = {people_in_room})) ");
                 }
                 if (!string.IsNullOrEmpty(standard))
@@ -115,8 +115,8 @@ namespace WBDProject
                 }
                 if (!string.IsNullOrEmpty(vehicle_type))
                 {
-                    textBuilder.Append("AND Excursion_ID IN (SELECT Excursion_ID FROM WBDPRoject.dbo.Vehicle_Rent " +
-                                       "WHERE Vehicle_ID IN (SELECT Vehicle_ID FROM WBDPRoject.dbo.Vehicle " +
+                    textBuilder.Append("AND Excursion_ID IN (SELECT Excursion_ID FROM Vehicle_Rent " +
+                                       "WHERE Vehicle_ID IN (SELECT Vehicle_ID FROM Vehicle " +
                                        $"WHERE Vehicle_Type = '{vehicle_type}')) ");
                 }
             }
@@ -156,10 +156,10 @@ namespace WBDProject
             string vehicle_type, string ClientID)
         {
             all_inclusive = all_inclusive == "yes" ? "Tak" : "Nie";
-            StringBuilder insertBuilder = new StringBuilder($"INSERT INTO WBDProject.dbo.Preference (Pref_ID, " +
+            StringBuilder insertBuilder = new StringBuilder($"INSERT INTO Preference (Pref_ID, " +
                             $"Standard, All_inclusive, People_in_room, Vehicle_Type, " +
                             $"Customer_ID) VALUES ( (SELECT COUNT(Pref_ID) FROM " +
-                            $"WBDProject.dbo.Preference) + 1, ");
+                            $"Preference) + 1, ");
             insertBuilder.Append(string.IsNullOrEmpty(standard) ? "NULL, " : $"\'{standard}\', ");
             insertBuilder.Append(string.IsNullOrEmpty(all_inclusive) ? "NULL, " : $"\'{all_inclusive}\', ");
             insertBuilder.Append(string.IsNullOrEmpty(people_in_room) ? "NULL, " : $"\'{people_in_room}\', ");
@@ -188,7 +188,7 @@ namespace WBDProject
         public static void FindPreferences(ref DataGridView grid, string ClientID)
         {
             var conn = new SqlConnection(connectionString);
-            string query = $"SELECT Pref_ID, Standard, All_inclusive, People_in_room, Vehicle_Type, Customer_ID FROM WBDProject.dbo.Preference WHERE Customer_ID = {ClientID};";
+            string query = $"SELECT Pref_ID, Standard, All_inclusive, People_in_room, Vehicle_Type, Customer_ID FROM Preference WHERE Customer_ID = {ClientID};";
             SqlCommand cmd = new SqlCommand(query, conn);
 
             try
@@ -219,7 +219,7 @@ namespace WBDProject
         {
             SqlConnection conn;
             conn = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("SELECT Customer_ID, First_Name, Last_Name FROM WBDProject.dbo.Customer;", conn);
+            SqlCommand cmd = new SqlCommand("SELECT Customer_ID, First_Name, Last_Name FROM Customer;", conn);
             cmd.CommandType = CommandType.Text;
 
             try

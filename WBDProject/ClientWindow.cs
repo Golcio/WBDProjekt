@@ -37,9 +37,15 @@ namespace WBDProject
         private void button1_Click(object sender, EventArgs e)
         {
             CustomerInterfaceWIndow CIW = new CustomerInterfaceWIndow(comboBox1.Text);
+            this.Close();
             CIW.Show();
             CIW.Activate();
-            this.Hide();
+            
+        }
+
+        private void formClose(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

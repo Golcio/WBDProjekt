@@ -131,5 +131,12 @@ namespace WBDProject
                 MessageBox.Show("No rows of preferences are chosen!");
             }
         }
+
+        private void formClose(object sender, FormClosedEventArgs e)
+        {
+            BeginningWindow BW = new BeginningWindow();
+            BW.Show();
+            BW.Activate();
+        }
     }
 }

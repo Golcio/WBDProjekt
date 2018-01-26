@@ -40,18 +40,19 @@
             this.comboBox1.Items.AddRange(new object[] {
             "admin",
             "client"});
-            this.comboBox1.Location = new System.Drawing.Point(79, 106);
+            this.comboBox1.Location = new System.Drawing.Point(59, 86);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.SelectedIndex = 1;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(91, 180);
+            this.button2.Location = new System.Drawing.Point(68, 146);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 23);
+            this.button2.Size = new System.Drawing.Size(82, 19);
             this.button2.TabIndex = 1;
             this.button2.Text = "OK";
             this.button2.UseVisualStyleBackColor = true;
@@ -60,24 +61,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(101, 86);
+            this.label1.Location = new System.Drawing.Point(76, 70);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 17);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Choose panel:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // BeginningWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(314, 279);
+            this.ClientSize = new System.Drawing.Size(236, 227);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BeginningWindow";
             this.Text = "Choose panel";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.formClose);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

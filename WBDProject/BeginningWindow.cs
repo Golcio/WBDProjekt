@@ -35,7 +35,7 @@ namespace WBDProject
                     CW.Activate();
                     break;
                 case "admin":
-                    AdminWindow AW = new AdminWindow();
+                    Form1 AW = new Form1();
                     AW.Show();
                     AW.Activate();
                     break;
@@ -55,6 +55,11 @@ namespace WBDProject
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void formClose(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

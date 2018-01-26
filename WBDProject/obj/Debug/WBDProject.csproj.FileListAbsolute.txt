@@ -10,3 +10,16 @@ E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\
 E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.AdminWindow.resources
 E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.ClientWindow.resources
 E:\Dropbox\Piotrka\Przedmioty\Sem5\WBD\Projekt\WBDProjekt\WBDProject\WBDProject\obj\Debug\WBDProject.CustomerInterfaceWIndow.resources
+D:\VisualStudioProjects\WBDProjekt\WBDProject\bin\Debug\WBDProject.exe.config
+D:\VisualStudioProjects\WBDProjekt\WBDProject\bin\Debug\WBDProject.exe
+D:\VisualStudioProjects\WBDProjekt\WBDProject\bin\Debug\WBDProject.pdb
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.csprojResolveAssemblyReference.cache
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.BeginningWindow.resources
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.ClientWindow.resources
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.CustomerInterfaceWIndow.resources
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.Properties.Resources.resources
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.csproj.GenerateResource.Cache
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.exe
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.pdb
+D:\VisualStudioProjects\WBDProjekt\WBDProject\obj\Debug\WBDProject.Form1.resources

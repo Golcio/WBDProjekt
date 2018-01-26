@@ -36,9 +36,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(130, 66);
+            this.label1.Location = new System.Drawing.Point(98, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Chose client:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -46,17 +47,19 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(133, 100);
+            this.comboBox1.Location = new System.Drawing.Point(100, 81);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(133, 150);
+            this.button1.Location = new System.Drawing.Point(100, 122);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 2;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
@@ -64,14 +67,16 @@
             // 
             // ClientWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(382, 297);
+            this.ClientSize = new System.Drawing.Size(286, 241);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ClientWindow";
             this.Text = "Client\'s Panel";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.formClose);
             this.Load += new System.EventHandler(this.ClientWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
